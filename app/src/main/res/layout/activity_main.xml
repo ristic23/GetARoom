@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ristic.getaroom.MainActivity"
+    android:background="@color/White">
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topGuideLine"
+        app:layout_constraintGuide_percent="0.07"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="57dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topGuideLine2"
+        app:layout_constraintGuide_percent="0.3"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="170dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomGuideLine"
+        app:layout_constraintGuide_percent="0.94"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="511dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/middleGuideLine"
+        app:layout_constraintGuide_percent="0.52"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="511dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/middleGuideLine2"
+        app:layout_constraintGuide_percent="0.58"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="511dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/accountBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/topGuideLine"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:layout_constraintDimensionRatio="w,48:48" />
+
+    <ImageView
+        android:id="@+id/bluetoothBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomGuideLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_bluetooth_connected_black_24dp"
+        app:layout_constraintDimensionRatio="w,48:48"/>
+
+    <TextView
+        android:id="@+id/nameOfApp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/topGuideLine2"
+        app:layout_constraintTop_toTopOf="@+id/topGuideLine"
+        android:text="Get A Room"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50dp" />
+
+
+    <ImageView
+        android:id="@+id/yourLocationBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/middleGuideLine"
+        app:layout_constraintBottom_toBottomOf="@+id/middleGuideLine2"
+        android:src="@drawable/ic_my_location_black_24dp"
+        app:layout_constraintDimensionRatio="w,48:48"/>
+
+
+    <TextView
+        android:id="@+id/textViewVasaLok"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/yourLocationBtn"
+        app:layout_constraintRight_toLeftOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/middleGuideLine"
+        app:layout_constraintBottom_toTopOf="@+id/middleGuideLine2"
+        android:text="Vasa Lokacija"
+        android:gravity="center|left"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewNovaLok"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/yourLocationBtn"
+        app:layout_constraintRight_toLeftOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/middleGuideLine"
+        app:layout_constraintBottom_toTopOf="@+id/middleGuideLine2"
+        android:text="Nova Lokacija"
+        android:gravity="center|right"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/searchBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/middleGuideLine"
+        app:layout_constraintBottom_toBottomOf="@+id/middleGuideLine2"
+        android:src="@drawable/ic_search_black_24dp"
+        app:layout_constraintDimensionRatio="w,48:48"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
